@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ratation {
+  animation: rotation 4s infinite linear;
+}
+@keyframes rotation {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg) skew(10deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
